@@ -21,7 +21,7 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
 Dialog DLL:      TCM.DLL V1.34.0.0
  
 <h2>Project:</h2>
-G:\clean\Stu-file\Embedded\RTOS\program\一次性任务\MDK-ARM\e-23-1.uvprojx
+G:\clean\Stu-file\Embedded\RTOS\RTOS\一次性任务\MDK-ARM\e-23-1.uvprojx
 Project File Date:  06/14/2025
 
 <h2>Output:</h2>
@@ -30,23 +30,21 @@ Build target 'e-23-1'
 compiling rtos_task.c...
 ../Core/Inc/rtos_task.h(13): warning:  #1-D: last line of file ends without a newline
   #endif
-..\Core\Src\rtos_task.c(6): warning:  #550-D: variable "tmp_handle"  was set but never used
-  	TaskHandle_t tmp_handle;
-..\Core\Src\rtos_task.c: 2 warnings, 0 errors
+..\Core\Src\rtos_task.c: 1 warning, 0 errors
 compiling main.c...
 ../ZNS/shell_cmd.h(10): warning:  #1-D: last line of file ends without a newline
   #endif
 ../Core/Inc/rtos_task.h(13): warning:  #1-D: last line of file ends without a newline
   #endif
-../Core/Src/main.c(42): warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "TaskFunction_t"
-  	xTaskCreate(task_control,"task_control_task",128,(void *)0,10,&xHandle2);
-../Core/Src/main.c(31): warning:  #177-D: variable "xHandle3"  was declared but never referenced
+../Core/Src/main.c(40): warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "TaskFunction_t"
+  	xTaskCreate(task_control,"task_control_task",128,(void *)0,10,&xHandle2);   //涓�娆℃�т换鍔?1
+../Core/Src/main.c(29): warning:  #177-D: variable "xHandle3"  was declared but never referenced
   	TaskHandle_t xHandle3;
 ../Core/Src/main.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=15334 RO-data=1266 RW-data=132 ZI-data=5692  
+Program Size: Code=15266 RO-data=1266 RW-data=132 ZI-data=5692  
 FromELF: creating hex file...
-"e-23-1\e-23-1.axf" - 0 Error(s), 6 Warning(s).
+"e-23-1\e-23-1.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 

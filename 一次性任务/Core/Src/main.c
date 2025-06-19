@@ -22,8 +22,6 @@ int fputc(int ch,FILE *f)
 }
 
 
-
-
 int main(void)
 {
 	TaskHandle_t xHandle;
@@ -39,9 +37,9 @@ int main(void)
 	
 	xTaskCreate(two_led_toggle,"two_led_toggle_task",128,(void *)0,10,&xHandle);
 	
-//	xTaskCreate(task_control,"task_control_task",128,(void *)0,10,&xHandle2);   //一次性任务1
+	xTaskCreate(task_control,"task_control_task",128,(void *)0,10,&xHandle2);   //一次性任务1
 	
-	xTaskCreate(runonce_entry,"runonce_entry_task",128,(void *)0,10,&xHandle2);		//一次性任务2
+//	xTaskCreate(runonce_entry,"runonce_entry_task",128,(void *)0,10,&xHandle2);		//一次性任务2
 	
 	vTaskStartScheduler();
 	
