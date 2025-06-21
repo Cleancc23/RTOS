@@ -48,3 +48,4 @@ e-23-1\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 e-23-1\main.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 e-23-1\main.o: ../Core/Inc/rtos_task.h
 e-23-1\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+e-23-1\main.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

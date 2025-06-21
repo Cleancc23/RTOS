@@ -27,24 +27,61 @@ Project File Date:  06/14/2025
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'd:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'e-23-1'
-compiling rtos_task.c...
-../Core/Inc/rtos_task.h(13): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Core\Src\rtos_task.c: 1 warning, 0 errors
+compiling croutine.c...
+compiling timers.c...
+compiling event_groups.c...
+compiling list.c...
+compiling heap_4.c...
+compiling stream_buffer.c...
+compiling port.c...
+compiling queue.c...
+compiling tasks.c...
+compiling cmsis_os.c...
+compiling stm32f1xx_it.c...
 compiling main.c...
 ../ZNS/shell_cmd.h(10): warning:  #1-D: last line of file ends without a newline
   #endif
-../Core/Inc/rtos_task.h(13): warning:  #1-D: last line of file ends without a newline
+../Core/Inc/rtos_task.h(15): warning:  #1295-D: Deprecated declaration complex_algorithm - give arg types
+  void complex_algorithm();
+../Core/Inc/rtos_task.h(18): warning:  #1-D: last line of file ends without a newline
   #endif
-../Core/Src/main.c(40): warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "TaskFunction_t"
-  	xTaskCreate(task_control,"task_control_task",128,(void *)0,10,&xHandle2);   //一次性任�?1
+../Core/Src/main.c(27): warning:  #177-D: variable "xHandle"  was declared but never referenced
+  	TaskHandle_t xHandle;
 ../Core/Src/main.c(29): warning:  #177-D: variable "xHandle3"  was declared but never referenced
   	TaskHandle_t xHandle3;
-../Core/Src/main.c: 4 warnings, 0 errors
+../Core/Src/main.c: 5 warnings, 0 errors
+compiling freertos.c...
+compiling sys_cmd.c...
+..\ZNS\sys_cmd.c(40): warning:  #870-D: invalid multibyte character sequence
+  	 printf("此二维码使用了活码技术，请放心扫�?!\r\n\r\n");
+..\ZNS\sys_cmd.c(42): warning:  #870-D: invalid multibyte character sequence
+  	 printf("�? ★声明：此代码版权归 振南电子 �? PN学堂 所有★ �? \r\n");
+..\ZNS\sys_cmd.c(42): warning:  #870-D: invalid multibyte character sequence
+  	 printf("�? ★声明：此代码版权归 振南电子 �? PN学堂 所有★ �? \r\n");
+..\ZNS\sys_cmd.c(42): warning:  #870-D: invalid multibyte character sequence
+  	 printf("�? ★声明：此代码版权归 振南电子 �? PN学堂 所有★ �? \r\n");
+..\ZNS\sys_cmd.c(50): warning:  #870-D: invalid multibyte character sequence
+  		 printf((qrcode[i]&(0X80000000>>j))?"�? ":"  ");
+..\ZNS\sys_cmd.c: 5 warnings, 0 errors
+compiling shell.c...
+compiling shell_cmd.c...
+..\ZNS\shell_cmd.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\ZNS\shell_cmd.c(47): warning:  #1-D: last line of file ends without a newline
+  ZNS_CMD_EXPORT(mem, show heap size)
+..\ZNS\shell_cmd.c: 2 warnings, 0 errors
+compiling rtos_task.c...
+../Core/Inc/rtos_task.h(15): warning:  #1295-D: Deprecated declaration complex_algorithm - give arg types
+  void complex_algorithm();
+../Core/Inc/rtos_task.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Core\Src\rtos_task.c(122): warning:  #177-D: variable "xHandle2"  was declared but never referenced
+   TaskHandle_t xHandle2;
+..\Core\Src\rtos_task.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=15266 RO-data=1266 RW-data=132 ZI-data=5692  
+Program Size: Code=17290 RO-data=1298 RW-data=136 ZI-data=5688  
 FromELF: creating hex file...
-"e-23-1\e-23-1.axf" - 0 Error(s), 5 Warning(s).
+"e-23-1\e-23-1.axf" - 0 Error(s), 15 Warning(s).
 
 <h2>Software Packages used:</h2>
 

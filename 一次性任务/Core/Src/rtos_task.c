@@ -72,4 +72,72 @@ void task_control(void)
 }
 
 
+//ÈÎÎñ0
+void print_string(void *p)
+{
+ while(1)
+ {
+	printf("print_string_task is running...\r\n");
+	vTaskDelay(1000);
+ }
+}
+
+
+
+void complex_algorithm()
+{
+ float x = 0.0;
+ int i = 0;
+
+ for(i=0;i<10000;i++)
+ {
+	sinf(x);
+	 
+	x += 0.01;
+ }
+}
+
+//ÑÓÊ±
+void timed_task_entry(void *p)
+{
+ TickType_t xLastWakeTime;
+
+ xLastWakeTime = xTaskGetTickCount();
+	
+ while(1)
+ {
+//	complex_algorithm();
+//  HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_5);
+	 
+	vTaskDelayUntil(&xLastWakeTime,1000);
+ }
+}
+
+
+
+void task_create_entry(void *p)
+{	
+ TaskHandle_t tmp_handle;	
+ TaskHandle_t xHandle;
+ TaskHandle_t xHandle2;
+	
+ vTaskDelay(8000);
+	
+ //=====================================
+ printf("start to create tasks\r\n");	
+	
+ printf("create 1st task\r\n");
+	
+ xTaskCreate(timed_task_entry,"timed_task",128,(void *)0,10,&xHandle);
+	
+ //=====================================	
+
+ tmp_handle = xTaskGetHandle("task_create_task");
+	
+ vTaskDelete(tmp_handle);
+}
+
+
+
+
 

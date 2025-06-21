@@ -1,6 +1,6 @@
 Dependencies for Project 'e-23-1', Target 'e-23-1': (DO NOT MODIFY !)
 F (startup_stm32f103xe.s)(0x684D8CAA)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\Core\Inc -I ../Drivers/CMSIS/Include-I.\RTE\_e-23-1-Id:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-Id:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1"--list startup_stm32f103xe.lst --xref -o e-23-1\startup_stm32f103xe.o --depend e-23-1\startup_stm32f103xe.d)
-F (../Core/Src/main.c)(0x685412B2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../ZNS-I.\RTE\_e-23-1-Id:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-Id:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o e-23-1\main.o --omf_browse e-23-1\main.crf --depend e-23-1\main.d)
+F (../Core/Src/main.c)(0x685626FB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../ZNS-I.\RTE\_e-23-1-Id:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-Id:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o e-23-1\main.o --omf_browse e-23-1\main.crf --depend e-23-1\main.d)
 I (../Core/Inc/main.h)(0x657D5096)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x684D23B0)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6593C050)
@@ -29,7 +29,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x684D23B0)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -45,12 +45,13 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (../ZNS/shell_cmd.h)(0x684D1CB4)
 I (../ZNS/shell.h)(0x6593CD26)
 I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (../Core/Inc/rtos_task.h)(0x684D9A89)
+I (../Core/Inc/rtos_task.h)(0x68562693)
+I (d:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
 F (../Core/Src/freertos.c)(0x657D52F4)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../ZNS-I.\RTE\_e-23-1-Id:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-Id:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o e-23-1\freertos.o --omf_browse e-23-1\freertos.crf --depend e-23-1\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -111,7 +112,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x684D23B0)
 I (../Core/Inc/stm32f1xx_it.h)(0x6593C04E)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -146,8 +147,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x684D23B0)
-F (..\Core\Src\rtos_task.c)(0x684D9B87)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../ZNS-I.\RTE\_e-23-1-Id:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-Id:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o e-23-1\rtos_task.o --omf_browse e-23-1\rtos_task.crf --depend e-23-1\rtos_task.d)
-I (../Core/Inc/rtos_task.h)(0x684D9A89)
+F (..\Core\Src\rtos_task.c)(0x685626FB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../ZNS-I.\RTE\_e-23-1-Id:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-Id:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o e-23-1\rtos_task.o --omf_browse e-23-1\rtos_task.crf --depend e-23-1\rtos_task.d)
+I (../Core/Inc/rtos_task.h)(0x68562693)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x684D23B0)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6593C050)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x684D23B0)
@@ -175,7 +176,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x684D23B0)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -190,6 +191,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x684D23A5
 I (../ZNS/shell.h)(0x6593CD26)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (d:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x684D23B0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../ZNS-I.\RTE\_e-23-1-Id:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-Id:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o e-23-1\stm32f1xx_hal_gpio_ex.o --omf_browse e-23-1\stm32f1xx_hal_gpio_ex.crf --depend e-23-1\stm32f1xx_hal_gpio_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x684D23B0)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6593C050)
@@ -584,7 +586,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x684D23A5)(--c99 -c -
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -598,7 +600,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -613,7 +615,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -626,7 +628,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -640,7 +642,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -655,7 +657,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -671,7 +673,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -687,7 +689,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -705,7 +707,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -717,7 +719,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c)(0x68
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
 I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -754,7 +756,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x684D23B0)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -797,7 +799,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x684D23B0)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
@@ -841,7 +843,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x684D23B0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x684D23B0)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x658EC76A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x658ED16C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x68562739)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x684D23A5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x684D23A5)
